@@ -1,0 +1,44 @@
+
+/*
+#########################
+ #UTILIDADES
+#########################
+*/
+.rf-glyphicon-large{
+	font-size: 18px;
+}
+
+/*
+#########################
+ #COMPONENTES
+#########################
+*/
+
+/*FIELD ACTION*/
+
+.rf-field-action{
+	display:flex;
+	
+}
+
+.rf-field-action-icon{
+	margin: 6px 0 0 5px;
+}
+
+/*
+#########################
+ #LAYOUT
+#########################
+*/
+
+.page-header{
+	margin-bottom:10px;
+	padding: 0px;
+	height: 75x
+}
+
+.rf-layout-footer{
+	text-align: center;
+	margin-top: 2px;
+	height: 12%;	
+}

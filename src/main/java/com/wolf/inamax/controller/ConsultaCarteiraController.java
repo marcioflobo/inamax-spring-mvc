@@ -8,6 +8,6 @@ public class ConsultaCarteiraController {
 
 	@RequestMapping("/consulta/carteira")
 	public String novo() {
-		return "ConsultaCarteira";
+		return "carteira/ConsultaCarteira";
 	}
 }
