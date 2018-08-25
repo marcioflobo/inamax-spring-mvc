@@ -53,6 +53,10 @@ public class Ocorrencia {
 	@Enumerated(EnumType.STRING)
 	private StatusOcorrencia status;
 	
+	public boolean isDisponivel() {
+		return StatusOcorrencia.DISPONIVEL.equals(this.status);
+	}
+	
 	@Column(name="modificaoPor")
 	private String modificadoPor;
 	
@@ -66,6 +70,9 @@ public class Ocorrencia {
 	@Enumerated(EnumType.STRING)
 	private TipoNegociacao tipoNegociacao;
 
+	
+	
+	
 	public Long getId() {
 		return id;
 	}
