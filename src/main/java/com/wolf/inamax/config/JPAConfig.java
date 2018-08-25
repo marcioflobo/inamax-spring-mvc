@@ -26,7 +26,7 @@ public class JPAConfig {
 	public DataSource dataSource() {
 		JndiDataSourceLookup dataSourceLookup = new JndiDataSourceLookup();
 		dataSourceLookup.setResourceRef(true);
-		return dataSourceLookup.getDataSource("jdbc/refrigerexDB");
+		return dataSourceLookup.getDataSource("jdbc/inamax");
 	}
 
 	@Bean

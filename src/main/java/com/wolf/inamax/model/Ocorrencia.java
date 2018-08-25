@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -40,13 +42,15 @@ public class Ocorrencia {
 	@Column(name="valor_acordo")
 	private BigDecimal valorAcordo;
 	
-	private String vencimento;
+	@Column(name="data_vencimento")
+	private String dataVencimento;
 	
 	private Integer parcelas;
 	
 	@Column(name="valor_entrada")
 	private BigDecimal valorEntrada;
 	
+	@Enumerated(EnumType.STRING)
 	private StatusOcorrencia status;
 	
 	@Column(name="modificaoPor")
@@ -59,6 +63,7 @@ public class Ocorrencia {
 	private String finalizadoEm;
 	
 	@Column(name="tipo_negociacao")
+	@Enumerated(EnumType.STRING)
 	private TipoNegociacao tipoNegociacao;
 
 	public Long getId() {
@@ -133,12 +138,14 @@ public class Ocorrencia {
 		this.valorAcordo = valorAcordo;
 	}
 
-	public String getVencimento() {
-		return vencimento;
+	
+
+	public String getDataVencimento() {
+		return dataVencimento;
 	}
 
-	public void setVencimento(String vencimento) {
-		this.vencimento = vencimento;
+	public void setDataVencimento(String dataVencimento) {
+		this.dataVencimento = dataVencimento;
 	}
 
 	public Integer getParcelas() {

@@ -31,14 +31,18 @@
 #########################
 */
 
-.page-header{
-	margin-bottom:10px;
-	padding: 0px;
-	height: 75x
+
+.inamax-layout-footer{
+	margin-top: 90%;
+	
 }
 
-.rf-layout-footer{
+
+.page-title{
 	text-align: center;
-	margin-top: 2px;
-	height: 12%;	
+	margin-left: 40px;
+}
+
+.logo-title{
+	color:red;
 }

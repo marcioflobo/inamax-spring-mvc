@@ -7,13 +7,61 @@
 
 <section layout:fragment="Conteudo">
 	
-	<div class="page-header">
-		<div class="container-fluid">
-			<h1>
-				Consulta Carteira
-			</h1>
+	<div class="page-header ">
+		<div class="container-fluid   col-md-12">
+			<h1 class="page-title">Consulta Carteira</h1> 	
 		</div>
 	</div>
+	
+	
+	<div class="container-fluid">
+	
+	<form  class="form-vertical" th:object="${ocorrencia}">
+		<table class="table  table-bordered  table-hover  table-striped  col-md-12">
+			<thead>
+				<tr class="text-center">
+					<td class="col-md-1">#</td>
+					<td class="col-md-1">ID</td>
+					<td class="col-md-3">Cliente</td>
+					<td class="col-md-2">CPF/CNPJ</td>
+					<td class="col-md-2">Telefone</td>
+					<td class="col-md-1">Vencimento</td>
+					<td class="col-md-2">Status</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="text-center">
+					<td>
+						<input type="checkbox"/>
+					</td>
+					<td></td>	
+					<td></td>			
+					<td></td>			
+					<td></td>		
+					<td></td>
+					<td>
+						<span class="label label-danger">Encerrado</span>
+					</td>
+				</tr>
+				
+				
+			</tbody>
+			<tfoot>
+					
+			</tfoot>
+			
+		</table>
+		
+		<div class="row">
+			<div class="col-md-1">
+			<button  class="btn btn-primary">Conduzir</button>
+		</div>
+		</div>
+		
+	</form>
+</div>
+	
+	
 	
 </section>
 

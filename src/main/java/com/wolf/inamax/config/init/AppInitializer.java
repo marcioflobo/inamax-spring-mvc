@@ -5,6 +5,7 @@ import javax.servlet.Filter;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import com.wolf.inamax.config.JPAConfig;
 import com.wolf.inamax.config.WebConfig;
 
 
@@ -13,7 +14,7 @@ public class AppInitializer extends AbstractAnnotationConfigDispatcherServletIni
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		return new Class<?>[] {};
+		return new Class<?>[] {JPAConfig.class};
 	}
 
 	@Override
