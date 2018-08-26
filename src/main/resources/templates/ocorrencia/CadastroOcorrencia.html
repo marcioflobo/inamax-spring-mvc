@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{/layout/LayoutPadrao}"	
+>
+
+<section layout:fragment="Conteudo">
+	
+	<div class="page-header ">
+		<div class="container-fluid   col-md-12">
+			<h1>Cadastro Ocorrência</h1>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+	
+	<form class="form-vertical" th:object="${ocorrencia}" th:action="@{/cadastro/ocorrencia}">
+    	<div class="row">
+    	</div>	 
+ 		 <div class="panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Dados Pessoais</h3>
+			  </div>
+			  <div class="panel-body">
+			 	<div class="row">
+			<div class="form-group">
+			
+				<div class="col-md-2  " >
+					<label class="label-control" for="id">ID</label>
+					<input class="form-control  text-center" id="id" type="text" th:field="*{idCliente}"/>
+				</div>
+				
+				<div class="col-md-2  ">
+					<label class="label-control" for="cpf">CPF/CNPJ</label>
+					<input class="form-control text-center" id="cpf" type="text" th:field="*{cpf}"/>
+				</div>
+				
+				<div class="col-md-5  ">
+					<label class="label-control" for="nome_cliente">Nome do Cliente</label>
+					<input class="form-control text-center" id="nome_cliente" type="text" th:field="*{nomeCliente}"/>
+				</div>
+				
+				<div class="col-md-3  ">
+					<label class="label-control" for="telefone">Telefone</label>
+					<input class="form-control  text-center " id="telefone" type="text" th:field="*{telefone}"/>
+				</div>
+				
+			</div>
+		</div>
+			  </div>
+		</div>
+		
+		<div class="panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Dados da Negociação</h3>
+			  </div>
+			  <div class="panel-body">
+			 	<div class="row">
+			<div class="form-group">
+			
+				<div class="col-md-2 " >
+					<label class="label-control" for="id">Valor Entrada</label>
+					<input class="form-control  text-center" id="id" type="text" th:field="*{idCliente}"/>
+				</div>
+				
+				<div class="col-md-2  ">
+					<label class="label-control" for="cpf">QTD Parcelas</label>
+					<input class="form-control text-center" id="cpf" type="text" th:field="*{cpf}"/>
+				</div>
+				
+				<div class="col-md-2  ">
+					<label class="label-control" for="nome_cliente">Saldo Devedor</label>
+					<input class="form-control text-center" id="nome_cliente" type="text" th:field="*{nomeCliente}"/>
+				</div>
+				
+				<div class="col-md-2  ">
+					<label class="label-control" for="telefone">Valor Compromisso</label>
+					<input class="form-control  text-center " id="telefone" type="text" th:field="*{telefone}"/>
+				</div>
+				
+				<div class="col-md-2  ">
+					<label class="label-control" for="telefone">Vencimento</label>
+					<input class="form-control  text-center " id="telefone" type="text" th:field="*{telefone}"/>
+				</div>
+				
+				<div class="col-md-2  ">
+					<label class="label-control" for="telefone">Tipo Negociacao</label>
+					<input class="form-control  text-center " id="telefone" type="text" th:field="*{telefone}"/>
+				</div>
+				
+				<div class="col-md-2  ">
+					<label class="label-control" for="telefone">Cod. Negociador</label>
+					<input class="form-control  text-center " id="telefone" type="text" th:field="*{telefone}"/>
+				</div>
+				
+			</div>
+		</div>
+			</div>
+		</div>
+		
+		<div class="panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">Registro Operacional</h3>
+			  </div>
+			  <div class="panel-body">
+			 	<div class="row">
+			<div class="form-group">
+			
+				<div class="col-md-2 " >
+					<label class="label-control" for="id">Cody</label>
+					<input class="form-control  text-center" id="id" type="text" th:field="*{idCliente}"/>
+				</div>
+				
+				<div class="col-md-3  ">
+					<label class="label-control" for="cpf">Colaborador</label>
+					<input class="form-control text-center" id="cpf" type="text" th:field="*{cpf}"/>
+				</div>
+				
+				<div class="col-md-3  ">
+					<label class="label-control" for="nome_cliente">Ocorrência</label>
+					<input class="form-control text-center" id="nome_cliente" type="text" th:field="*{nomeCliente}"/>
+				</div>
+				
+				<div class="col-md-4  ">
+					<label class="label-control" for="telefone">Motivo do Atraso</label>
+					<input class="form-control  text-center " id="telefone" type="text" th:field="*{telefone}"/>
+				</div>
+				
+			</div>
+		</div>
+			</div>
+		</div>
+		<div class="row  col-md-2">
+			<button type="submit" class="btn btn-primary">Salvar</button>
+		</div>
+		
+	</form>
+	</div>
+
+</section>
+
+
+</html>	

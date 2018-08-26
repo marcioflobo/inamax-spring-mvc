@@ -16,7 +16,7 @@
 	
 	<div class="container-fluid">
 	
-	<form  class="form-vertical">
+	<form  class="form-vertical" method="POST" th:action="@{/cadastro/ocorrencia}" th:object="${ocorrencia}">
 		<table class="table  table-bordered  table-hover  table-striped  col-md-12">
 			<thead>
 				<tr class="text-center">
@@ -40,10 +40,12 @@
 					<td th:text="${ocorrencia.telefone}"></td>		
 					<td th:text="${ocorrencia.dataVencimento}"></td>
 					<td >
+						
 						<span class="label label-success "						
 							th:text="${ocorrencia.status.descricao}"
 							th:classappend="${ocorrencia.disponivel ? 'label-success' : 'label-danger'}"
-						>					
+						>	
+										
 						</span>
 					</td>
 				</tr>			
@@ -57,7 +59,7 @@
 		
 		<div class="row">
 			<div class="col-md-1">
-			<button  class="btn btn-primary">Conduzir</button>
+			<button  class="btn btn-primary" type="submit">Conduzir</button>
 		</div>
 		</div>
 		
